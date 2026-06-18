@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Monblanproject</title>
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="artboard">
+      <div class="screen-label">Rows</div>
+
+      <main class="page-shell">
+        <section class="profile" aria-labelledby="profile-title">
+          <img class="top-shape" src="./photo/Vector 1.svg" alt="" aria-hidden="true" />
+          <img class="brand-mark" src="./photo/Group 1.svg" alt="" aria-hidden="true" />
+
+          <div class="profile-spacer" aria-hidden="true"></div>
+          <div class="profile-card">
+            <div class="profile-top">
+              <h1 id="profile-title">monblanproject</h1>
+              <button class="start-button" type="button">Start on 17-02-2016</button>
+            </div>
+
+            <dl class="stats" aria-label="Profile statistics">
+              <div><dt>870</dt><dd>posts</dd></div>
+              <div><dt>11,787</dt><dd>followers</dd></div>
+              <div><dt>112</dt><dd>following</dd></div>
+            </dl>
+
+            <form class="filters" aria-label="Filter posts by date">
+              <span class="filters-label">Date</span>
+              <label class="date-field">
+                <span class="sr-only">Date from</span>
+                <input id="date-from" type="text" placeholder="from" autocomplete="off" />
+                <button class="field-clear" type="button" data-clear="date-from" aria-label="Clear date from"></button>
+                <span class="calendar-icon" aria-hidden="true"></span>
+              </label>
+              <label class="date-field">
+                <span class="sr-only">Date to</span>
+                <input id="date-to" type="text" value="09_08_2016" autocomplete="off" />
+                <button class="field-clear" type="button" data-clear="date-to" aria-label="Clear date to"></button>
+                <span class="calendar-icon" aria-hidden="true"></span>
+              </label>
+            </form>
+          </div>
+        </section>
+
+        <section class="content" aria-label="Posts">
+          <div class="view-switcher" aria-label="Choose view">
+            <button class="view-button active" type="button" data-view="grid" aria-label="Grid view">
+              <span class="grid-icon"></span>
+            </button>
+            <button class="view-button" type="button" data-view="list" aria-label="List view">
+              <span class="list-icon"></span>
+            </button>
+          </div>
+
+          <div id="posts" class="posts-grid"></div>
+
+          <button id="load-more" class="load-more" type="button">LOAD MORE</button>
+        </section>
+
+        <img class="side-blob" src="./photo/Vector 2.svg" alt="" aria-hidden="true" />
+      </main>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
